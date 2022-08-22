@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 0.1px);
+    color: hsl(228, 12%, 48%);
+    margin: 2em 1em;
+}
+
+.container {
+    width: 600px;
+}
+
+.container img:nth-child(2) {
+    display: none;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+}
+
+.container img:nth-child(1) {
+    border-radius: 10px 10px 0 0;
+}
+
+.container .text-area {
+    padding: 0 2em;
+}
+
+.container .text-area p:first-child {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.container .text-area h2 {
+    color: hsl(212, 21%, 14%);
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.container .text-area ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+
+.container .text-area ul li:first-child {
+    color: hsl(158, 36%, 37%);
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+}
+
+.container .text-area ul li:nth-child(2) {
+    margin-left: 1em;
+    font-weight: 500;
+}
+
+.container .text-area a img{
+    margin-right: 8px;
+}
+
+.container .text-area .btn {
+    background-color: hsl(158, 36%, 37%);
+    color: #fff;
+    font-weight: 700;
+    padding: 1em 2em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+}
+
+.container .text-area .btn:hover{
+    background-color:hsl(158, 36%, 20%)
+}
+
+
+@media (min-width: 640px) {
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container .text-area{
+        padding: 2em;
+    }
+
+    .container img:nth-child(1) {
+        display: none;
+    }
+
+    .container img:nth-child(2) {
+        display: inline;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .container .text-area .btn {
+        margin-bottom: 0;
+    }
+
+    .container .text-area ul {
+        margin: 2em 0;
+    }
+    
+    
+}
